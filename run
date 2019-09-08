@@ -1,0 +1,40 @@
+#!/bin/bash
+# Jangan hapus author mhank
+# Script By Ubaii ID 
+# fb.com/kakko.go.id
+
+author=" -------------------------------------- \n
+SERVEO AUTO RECONNECTING \n
+BY      : Ubaii ID \n
+From lammer to KONTOL\n-------------------------------------- "
+
+# mengecek openssh
+sh apt list --installed 2>/dev/null | grep openssh || apt install openssh -y
+clear
+
+# Cek port
+for cekk in "$2"
+do
+nom=$cekk
+done
+if [ -p ${nom} ]; then
+  echo -e $author
+  echo "TERDAPAT MASALAH : PORT tidak di setting." # Jika port tidak di setting
+  exit
+else
+  echo "Port di setting $nom" # Jika port disetting
+fi
+
+# Auto Reconnecting
+clear
+while :
+for port in "$2"
+do 
+echo -e $author
+echo "PORT TERPILIH :" "$port"
+done
+do
+	ssh -R $port:localhost:$port serveo.net
+	echo "RECONNECTING..."
+	sleep 1
+done
