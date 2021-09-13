@@ -6,7 +6,7 @@
 author=" -------------------------------------- \n
 SERVEO AUTO RECONNECTING \n
 BY      : Ubaii ID \n
-From lammer to KONTOL\n-------------------------------------- "
+From lammer to leader\n-------------------------------------- "
 
 # mengecek openssh
 sh apt list --installed 2>/dev/null | grep openssh || apt install openssh -y
